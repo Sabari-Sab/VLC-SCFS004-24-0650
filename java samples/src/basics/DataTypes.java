@@ -61,12 +61,15 @@ public class DataTypes {
         System.out.println("The value of char variable is " + initial);
         System.out.println("The value of char variable using the unicode value is " + init);
         System.out.println("The value of boolean variable is " + isValid);
+        // primitive types do not have methods and attributes
 
         System.out.println("-----------Usage of Object types--------------------- ");
 
         // usage of object type
         String name = "Alex";
         System.out.println("The value of the String type variable is " + name);
+        // object types have methods and attributes
+        System.out.println(name.length()); // accesing a method of a string object
 
     }
 }
