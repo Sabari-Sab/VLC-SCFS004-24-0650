@@ -40,13 +40,16 @@ public class DataTypes {
          * boolean -- 1 bit
          */
 
-        // usage
+        // usage of primitive types
         byte b = 10;
         short s = 100;
         int i = 1000;
         long l = 10000;
         float f = 100.25f;
         double d = 1000.75;
+        char initial = 'A';
+        char init = '\u0041';
+        boolean isValid = true;
 
         System.out.println("The value of byte variable is " + b);
         System.out.println("The value of short variable is " + s);
@@ -54,6 +57,9 @@ public class DataTypes {
         System.out.println("The value of long variable is " + l);
         System.out.println("The value of float variable is " + f);
         System.out.println("The value of double variable is " + d);
+        System.out.println("The value of char variable is " + initial);
+        System.out.println("The value of char variable using the unicode value is " + init);
+        System.out.println("The value of boolean variable is " + isValid);
 
     }
 }
