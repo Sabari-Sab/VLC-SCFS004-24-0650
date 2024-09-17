@@ -1,6 +1,7 @@
 package basics;
 
 public class VariableDeclaration {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         /*
          * declaring a variable involves specifying the data type followed by the
@@ -10,8 +11,10 @@ public class VariableDeclaration {
          * Syntax
          * data_type variable_name;
          * data_type variable_name = value;
-         * 
-         * 
          */
+
+        // declare integer type variable
+        int age; // variable declared without initialization
+        int sal = 1000; // variable declared without initialization
     }
 }
