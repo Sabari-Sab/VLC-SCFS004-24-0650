@@ -51,6 +51,7 @@ public class DataTypes {
         char init = '\u0041';
         boolean isValid = true;
 
+        System.out.println("-----------Usage of Primitive types--------------------- ");
         System.out.println("The value of byte variable is " + b);
         System.out.println("The value of short variable is " + s);
         System.out.println("The value of int variable is " + i);
@@ -60,6 +61,12 @@ public class DataTypes {
         System.out.println("The value of char variable is " + initial);
         System.out.println("The value of char variable using the unicode value is " + init);
         System.out.println("The value of boolean variable is " + isValid);
+
+        System.out.println("-----------Usage of Object types--------------------- ");
+
+        // usage of object type
+        String name = "Alex";
+        System.out.println("The value of the String type variable is " + name);
 
     }
 }
