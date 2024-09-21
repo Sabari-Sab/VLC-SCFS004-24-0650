@@ -19,7 +19,7 @@ public class DataTypes {
          * Array
          * Byte
          * Short
-         * Int
+         * Integer
          * Long
          * Float
          * Double
