@@ -39,5 +39,9 @@ public class ArrayMethods {
         int[][] b2 = { { 1, 2 }, { 3, 4 } };
         System.out.println(Arrays.deepEquals(b1, b2));
 
+        // stream API
+        int sum = Arrays.stream(numbers).sum();
+        System.out.println(sum);
+
     }
 }
