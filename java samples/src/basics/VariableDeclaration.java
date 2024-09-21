@@ -18,6 +18,9 @@ public class VariableDeclaration {
         int sal = 1000; // variable declared without initialization
 
         // declare floating point variables
+        float commission; // variable declared without initialization
+        float salary = 5677.25f; // variable declared without initialization
+
         double amount; // variable declared without initialization
         double price = 56.25; // variable declared without initialization
 
