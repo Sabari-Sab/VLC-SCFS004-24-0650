@@ -10,5 +10,7 @@ public class VowelCount {
         System.out.print("Enter a String ");
         quest = scan.next();
         System.out.println(quest + " has " + vowelCount + " vowels");
+
+        scan.close();
     }
 }
