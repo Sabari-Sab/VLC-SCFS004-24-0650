@@ -28,5 +28,11 @@ public class ConditionsIf {
         } else
             System.out.println("ugly");
 
+        // using the condition with a boolean variable
+        boolean res;
+        res = x > y;
+        if (res)
+            System.out.println("yes");
+
     }
 }
