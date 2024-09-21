@@ -19,20 +19,22 @@ public class FormattingOutput {
          */
         System.out.println();
         // Right justify the text in the output
+        System.out.println("------------- Right Justify----------------------");
         System.out.printf("%10s  %4s %n", "Name", "Age");
         System.out.println("----------------------");
         System.out.printf("%10s  %4d %n", name, age);
         System.out.printf("%10s  %4d %n", fname, age1);
         System.out.printf("%10s  %4d %n", lname, age2);
+        System.out.println("------------- Left Justify----------------------");
         // Left justify the text in the output
-        System.out.println("---------------------");
+        System.out.printf("%14s%n", "----------------------");
         System.out.printf("\u001B[35m | %-10s | %-4s | %n \u001B[0m", "Name", "Age");
-        System.out.println("---------------------");
+        System.out.printf("%14s%n", "---------------------");
         System.out.printf("\u001B[32m | %-10s | %-4d | %n \u001B[0m", name, age);
-        System.out.println("---------------------");
+        System.out.printf("%14s%n", "---------------------");
         System.out.printf("\u001B[32m | %-10s | %-4d | %n \u001B[0m", fname, age1);
-        System.out.println("---------------------");
+        System.out.printf("%14s%n", "---------------------");
         System.out.printf("\u001B[32m | %-10s | %-4d | %n \u001B[0m", lname, age2);
-        System.out.println("---------------------");
+        System.out.printf("%14s%n", "---------------------");
     }
 }
