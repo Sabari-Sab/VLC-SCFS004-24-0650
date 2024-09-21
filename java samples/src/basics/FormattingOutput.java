@@ -12,7 +12,7 @@ public class FormattingOutput {
         System.out.print("this does not add a new line");
         System.out.print("this adds  a new line \n");
 
-        // adding a new line character
+        // adding a new line character (\ is the escape character)
         System.out.println("This is a text \n and this is some more");
 
         // using the format

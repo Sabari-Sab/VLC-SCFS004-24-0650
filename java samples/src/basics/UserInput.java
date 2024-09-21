@@ -11,7 +11,8 @@ public class UserInput {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter your Salary: ");
         sal = scan.nextInt(); // scanning for int type
-        scan.nextLine();
+        scan.nextLine(); // to consume the leftover new line character from the scan.nextInt used
+                         // previously
         System.out.print("Enter your name: ");
         name = scan.nextLine(); // scanning a line of text
         System.out.print("Enter your age: ");
