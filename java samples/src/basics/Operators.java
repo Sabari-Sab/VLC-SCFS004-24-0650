@@ -11,7 +11,6 @@ public class Operators {
         System.out.println(x * y); // Multiplication operator
         System.out.println(x / y); // Division operator
         System.out.println(x % y); // Modulus operator
-        System.out.println("----------------Arithmetic Operators----------------");
         System.out.println("------------ Assignment Operators-----------------------");
         x = 20; // equals
         System.out.println(x); // 20
@@ -25,5 +24,14 @@ public class Operators {
         System.out.println(x); // 20
         x %= 10; // modulo equals
         System.out.println(x); // 0
+        System.out.println("----------------Comparision Operators----------------");
+        x = 10;
+        y = 20;
+        System.out.println(x == y); // equality check (not for Strings)
+        System.out.println(x != y); // inequality check
+        System.out.println(x > y); // greater than check
+        System.out.println(x < y); // lesser than check
+        System.out.println(x >= y); // greater than equals check
+        System.out.println(x <= y);// lesser than equals check
     }
 }
