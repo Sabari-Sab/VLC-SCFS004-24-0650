@@ -2,7 +2,7 @@ package basics;
 
 public class VariableDeclaration {
     @SuppressWarnings("unused")
-    public static void main(String[] args) {
+    public static void main(StringDemo[] args) {
         /*
          * declaring a variable involves specifying the data type followed by the
          * variable name.

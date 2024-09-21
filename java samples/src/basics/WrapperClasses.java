@@ -1,7 +1,7 @@
 package basics;
 
 public class WrapperClasses {
-    public static void main(String[] args) {
+    public static void main(StringDemo[] args) {
         System.out.println("----------------------Byte Class-------------------");
         System.out.println("the size of Byte type is " + Byte.SIZE);
         System.out.println("the maximum value of Byte type is " + Byte.MAX_VALUE);
