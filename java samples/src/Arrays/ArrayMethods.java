@@ -13,7 +13,7 @@ public class ArrayMethods {
 
         // sort method
         System.out.println(Arrays.toString(numbers)); // before sort
-        Arrays.sort(numbers);
+        Arrays.sort(numbers); // permanently sorts the contents of the array
         System.out.println(Arrays.toString(numbers)); // after sort
 
         // binary search
@@ -26,6 +26,18 @@ public class ArrayMethods {
         int[] nums = new int[5];
         Arrays.fill(nums, 5);
         System.out.println(Arrays.toString(nums)); // after fill
+
+        // copy arrays
+        int[] copy = Arrays.copyOf(numbers, 3);
+        System.out.println(Arrays.toString(copy));
+
+        // compare arrays
+        int[] a1 = { 1, 2, 3 };
+        int[] a2 = { 1, 2, 3 };
+        System.out.println(Arrays.equals(a1, a2));
+        int[][] b1 = { { 1, 2 }, { 3, 4 } };
+        int[][] b2 = { { 1, 2 }, { 3, 4 } };
+        System.out.println(Arrays.deepEquals(b1, b2));
 
     }
 }
