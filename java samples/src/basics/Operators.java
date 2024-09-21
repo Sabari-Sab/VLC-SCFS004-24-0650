@@ -33,5 +33,18 @@ public class Operators {
         System.out.println(x < y); // lesser than check
         System.out.println(x >= y); // greater than equals check
         System.out.println(x <= y);// lesser than equals check
+        System.out.println("----------------Unary operators----------------");
+        x = 10;
+        System.out.println(x++); // post Increment
+        System.out.println(++x); // pre increment
+        System.out.println(x--); // post decrement
+        System.out.println(--x); // pre decrement
+        System.out.println("----------------Logical operators----------------");
+        // function on a set of conditions
+        x = 10;
+        y = 20;
+        System.out.println(x > y && x < 20); // the logical AND operator
+        System.out.println(x > y || x < 20); // the logical or operator
+        System.out.println(!(x > y && x < 20)); // the logical not operator
     }
 }
