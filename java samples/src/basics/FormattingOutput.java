@@ -5,8 +5,11 @@ public class FormattingOutput {
         String name = "David", fname = "Alex", lname = "Tan";
         int age = 50, age1 = 35, age2 = 35;
 
-        // print to console
+        // print to console with a new line
         System.out.println(name + " is " + age + " years old.");
+
+        // pring to console without a new line
+        System.out.print("this does not add a new line");
 
         // using the format
         System.out.printf("%s is %d years old ", name, age);
