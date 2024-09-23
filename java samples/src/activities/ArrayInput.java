@@ -7,8 +7,6 @@ public class ArrayInput {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Step 1: Declare an array of 5 elements
-
         System.out.println("Enter the number of elements you want to store: ");
         int n = scanner.nextInt();
 
