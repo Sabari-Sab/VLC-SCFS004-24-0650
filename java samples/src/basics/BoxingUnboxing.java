@@ -26,5 +26,15 @@ public class BoxingUnboxing {
         Integer boxed = 20; // Wrapper class
         int m = boxed; // unboxing from wrapper class to primitive
         System.out.println(m); // printing the primitive type
+
+        // manual boxing used in older versions of Java
+        int boxman = 30;
+        Integer box = Integer.valueOf(boxman);
+        System.out.println(box);
+
+        // manual unboxing used in older versions of Java
+        Integer boxman1 = 30;
+        int test = boxman1.intValue();
+        System.out.println(test);
     }
 }
