@@ -18,7 +18,7 @@ public class TypeConversion {
         System.out.println(num1);
 
         /*
-         * Number to String
+         * integer to String
          */
         int m = 1253;
         String s = Integer.toString(m); // method to convert int to string
