@@ -21,7 +21,6 @@ public class ArrayInputChoice {
                 break;
             }
             System.out.print("Element " + (i + 1) + ": ");
-
             array[i] = scanner.nextInt();
         }
 
