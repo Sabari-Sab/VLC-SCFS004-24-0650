@@ -15,5 +15,16 @@ public class NestedLoops {
             }
             System.out.println("----------");
         }
+
+        System.out.println("-------------------------------- Mixed loop types----------");
+        // nesting a for loop within a while loop
+        int i = 1;
+        while (i < 6) { // outer loop
+            for (int j = 1; j < 11; j++) { // inner loop
+                System.out.println(i + " x " + j + " = " + (i * j));
+            }
+            i++;
+            System.out.println("----------");
+        }
     }
 }
