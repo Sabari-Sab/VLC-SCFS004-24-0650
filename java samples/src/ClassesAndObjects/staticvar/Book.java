@@ -9,7 +9,9 @@ public class Book {
     int numberOfPages;
 
     // static variable (class variable)
-    static String library = "National Library"; // the value is shared across all instances
+    // static String library = "National Library"; // the value is shared across all
+    // instances
+    static final String library = "National Library"; // the value is shared across all instances and cannot be altered
 
     /*
      * The static variable can be accessed via the instance or the class

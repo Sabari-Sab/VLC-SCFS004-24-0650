@@ -12,7 +12,7 @@ public class Library {
         b001.PublicationYear = 1997;
         b001.genre = "Fiction";
         b001.numberOfPages = 323;
-        b001.library = "New Library"; // same as writing Book.library = "New Library"
+        // b001.library = "New Library"; // same as writing Book.library = "New Library"
 
         // populating the attributes of the instance b002
         b002.title = "1984";
