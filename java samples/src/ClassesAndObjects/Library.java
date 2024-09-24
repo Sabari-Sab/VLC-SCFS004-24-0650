@@ -31,5 +31,16 @@ public class Library {
                         + b001.PublicationYear
                         + " - "
                         + b001.numberOfPages);
+        System.out.println(
+                b002.title
+                        + " - "
+                        + b002.author
+                        + " - "
+                        + b002.genre
+                        + " - "
+                        + b002.PublicationYear
+                        + " - "
+                        + b002.numberOfPages);
+
     }
 }
