@@ -1,7 +1,7 @@
 package ClassesAndObjects;
 
 // Creating a blueprint of a book
-// Main method not needed
+// Main method not needed (not mandatory)
 public class Book {
     // instance variables or attributes or fields
     String title;
