@@ -12,6 +12,7 @@ public class Book {
     // static String library = "National Library"; // the value is shared across all
     // instances
     static final String library = "National Library"; // the value is shared across all instances and cannot be altered
+    static int bookCount = 0;
 
     /*
      * The static variable can be accessed via the instance or the class

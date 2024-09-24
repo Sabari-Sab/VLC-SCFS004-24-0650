@@ -12,6 +12,7 @@ public class Library {
         b001.PublicationYear = 1997;
         b001.genre = "Fiction";
         b001.numberOfPages = 323;
+        Book.bookCount++;
         // b001.library = "New Library"; // same as writing Book.library = "New Library"
 
         // populating the attributes of the instance b002
@@ -20,7 +21,9 @@ public class Library {
         b002.PublicationYear = 1949;
         b002.genre = "Dystopian fiction";
         b002.numberOfPages = 327;
+        Book.bookCount++;
 
+        System.out.println("There are " + Book.bookCount + " Books currently.");
         // access the instancess and print to console
         System.out.println(
                 b001.title
