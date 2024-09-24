@@ -1,4 +1,4 @@
-package classesandobjects;
+package classesandobjects.book;
 
 // Creating a blueprint of a book
 // Main method not needed (not mandatory)
