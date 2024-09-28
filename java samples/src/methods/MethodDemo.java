@@ -15,6 +15,10 @@ public class MethodDemo {
         MethodDemo m = new MethodDemo();
         m.sayHello();
         System.out.println("The instance method is done executing");
+
+        MethodDemo m1 = new MethodDemo();
+        m1.sayHello();
+
     }
 
 }
