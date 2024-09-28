@@ -17,6 +17,7 @@ public class Student {
         System.out.println("This is a instance methood");
     }
 
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         greet(); // accessing the static method
         // greetInstance();// not allowed
