@@ -30,6 +30,7 @@ public class Book {
         this.bname = bname;
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Book b001 = new Book("MyBook"); // using the constructor 1
         Book b002 = new Book(100, "Book1"); // using the constructor 2
