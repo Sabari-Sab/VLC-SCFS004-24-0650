@@ -106,7 +106,9 @@
 
 - Java’s autoboxing and widening conversions can affect which overloaded method is called.
 - **Example**:
+  ```java
   void print(int a) {}
   void print(Integer a) {}
+  ```
 
 print(10); // Calls print(int a), not print(Integer a)
