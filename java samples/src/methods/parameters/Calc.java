@@ -15,6 +15,19 @@ public class Calc {
         return x - y;
     }
 
+    int getRes(int a, int b, char opr) {
+        int res = 0;
+        if (opr == 'a')
+            res = a + b;
+        else if (opr == 'b')
+            res = a - b;
+        else if (opr == 'c')
+            res = a * b;
+        else if (opr == 'd')
+            res = a / b;
+        return res;
+    }
+
     public static void main(String[] args) {
         Calc calc = new Calc();
         int res = calc.add(10, 29);
@@ -27,5 +40,9 @@ public class Calc {
         System.out.println(res);
         res = calculator.diff(35, 5);
         System.out.println(res);
+
+        Calc c = new Calc();
+        System.out.println(c.getRes(10, 20, 'd'));
+
     }
 }
