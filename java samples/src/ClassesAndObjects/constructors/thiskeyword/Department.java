@@ -9,15 +9,23 @@ public class Department {
         this.dname = dname;
     }
 
+    // instance mwthod to display the objects created
+    void display() {
+        System.out.println("ID: " + this.did);
+        System.out.println("Name: " + this.dname);
+    }
+
     public static void main(String[] args) {
         Department department = new Department(10, "sales");
+        department.display();
         Department newDepartment = new Department(11, "IT");
+        newDepartment.display();
 
-        System.out.println(department.did);
-        System.out.println(department.dname);
+        // System.out.println(department.did);
+        // System.out.println(department.dname);
 
-        System.out.println(newDepartment.did);
-        System.out.println(newDepartment.dname);
+        // System.out.println(newDepartment.did);
+        // System.out.println(newDepartment.dname);
 
     }
 }
