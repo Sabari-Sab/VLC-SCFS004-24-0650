@@ -1,0 +1,99 @@
+### 1. **Different Number of Parameters**
+
+- Methods can be overloaded by having a different number of parameters (also known as arity).
+- **Example**:
+  ```java
+  void print(int a) {}
+  void print(int a, int b) {}
+
+  ```
+
+### 2. **Different Parameter Types**
+
+- Methods can be overloaded by having parameters of different types.
+- **Example**:
+  ```java
+  void print(int a) {}
+  void print(double a) {}
+
+  ```
+
+### 3. **Different Parameter Order**
+
+- Methods can be overloaded by changing the order of parameters if they are of different types.
+- **Example**:
+  ```java
+  void print(int a, double b) {}
+  void print(double a, int b) {}
+
+  ```
+
+### 4. **Cannot Overload by Return Type Alone**
+
+- Overloading cannot be done by simply changing the return type of the methods. The parameter list must differ.
+- **Invalid Example**:
+  ```java
+  int print(int a) {}    // Error
+  double print(int a) {} // Error
+
+  ```
+
+### 5. **Access Modifiers Do Not Affect Overloading**
+
+- Changing the access modifiers (public, private, protected, or default) will not create an overload.
+- **Example**:
+  ```java
+  public void print(int a) {}
+  private void print(int a, double b) {}  // Valid, different parameter list
+
+  ```
+
+### 6. **Static Methods Can Be Overloaded**
+
+- Static methods can also be overloaded, following the same rules as instance methods.
+- **Example**:
+  ```java
+  static void show(String s) {}
+  static void show(int x) {}
+
+  ```
+
+### 7. **Varargs Can Be Used in Overloading**
+
+- Varargs (variable-length arguments) can be used, but they must differ from other overloaded methods.
+- **Example**:
+  ```java
+  void print(int... numbers) {}
+  void print(String... names) {}
+
+  ```
+
+### 8. **Method Overloading with Inheritance (Not Overriding)**
+
+- A method in a subclass can overload a method in the superclass if the parameter list is different.
+- **Example**:
+  ```java
+  class Parent {
+      void display(int a) {}
+  }
+
+  class Child extends Parent {
+      void display(String a) {}  // Overloaded, not overridden
+  }
+
+  ```
+
+### 9. **Primitive Types and Object Types Can Be Used in Overloading**
+
+- Overloading can differentiate between primitive and object types.
+- **Example**:
+  ```java
+  void display(int a) {}
+  void display(Integer a) {}
+
+  ```
+
+### 10. **Autoboxing and Widening Can Be Involved**
+
+- Java’s autoboxing and widening conversions can affect which overloaded method is called.
+- **Example**:
