@@ -1,0 +1,41 @@
+In Java, consistent and meaningful naming conventions are important for readability and maintainability. Here are the common Java naming conventions:
+
+1.  Class Names:
+
+- Convention : Use PascalCase (also called UpperCamelCase) for class names.
+- Examples : Employee , CustomerOrder , DataManager
+
+2.  Method Names:
+
+- Convention : Use camelCase for method names. Methods should be verbs or verb phrases.
+- Examples : getEmployee() , calculateTotalPrice() , printReport()
+
+3.  Variable Names:
+
+- Convention : Use camelCase for variables. Variable names should be nouns or noun phrases.
+- Examples : employeeName , totalAmount , orderList
+
+4.  Constant Names:
+
+- Convention : Use all uppercase letters with underscores separating words.
+- Examples : MAX_VALUE , PI , DEFAULT_TIMEOUT
+
+5.  Package Names:
+
+- Convention : Use all lowercase letters, and when multiple words are used, separate them with dots. The names are typically written in reverse domain name notation.
+- Examples : com.company.project , org.example.utils
+
+6.  Interface Names:
+
+- Convention : Use PascalCase, like classes, often prefixed with "I" or written as descriptive nouns.
+- Examples : List , Runnable , IEmployee
+
+7.  Enum Names:
+
+- Convention : Use PascalCase for the enum name and all uppercase letters for enum constants.
+- Examples : DayOfWeek , ERROR_CODE , SUCCESS_STATUS
+
+8.  Annotations:
+
+- Convention : Use PascalCase for custom annotation names.
+- Examples : @Override , @Controller , @RequestMapping
