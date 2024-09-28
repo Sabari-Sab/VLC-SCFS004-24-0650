@@ -48,7 +48,7 @@ public class Employee {
         Employee emp1 = new Employee(102, "Jane");
         System.out.println(emp1.empid + "- " + emp1.ename + " - " + emp1.sal);
         Employee emp11 = new Employee("Jane", 104);
-        System.out.println(emp1.empid + "- " + emp1.ename + " - " + emp1.sal);
+        System.out.println(emp11.empid + "- " + emp11.ename + " - " + emp11.sal);
         Employee emp2 = new Employee(102);
         System.out.println(emp2.empid + "- " + emp2.ename + " - " + emp2.sal);
 
