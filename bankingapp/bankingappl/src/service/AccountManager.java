@@ -1,10 +1,11 @@
-package util;
+package service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 import pojo.BankAccount;
+import util.Utils;
 
 public class AccountManager {
 

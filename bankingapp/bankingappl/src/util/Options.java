@@ -1,29 +1,19 @@
+package util;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import util.AccountManager;
-import util.Utils;
 
+import myapp.App;
+import service.AccountManager;
 
-public class App {
+public class Options {
 
     static byte choice;
 
-   public static void menu(){
-        System.out.println();
-        System.out.println(Utils.ANSI_BLUE + "Choose from the options" + Utils.ANSI_RESET);
-        System.out.println("---------------------");
-        System.out.println(Utils.ANSI_GREEN + "1. Create a new account");
-        System.out.println("2. List all accounts");
-        System.out.println("3. View Account Details");
-        System.out.println("4. Delete an account");
-        System.out.println("5. Deposit");
-        System.out.println("6. Withdraw");
-        System.out.println("7. Exit" + Utils.ANSI_RESET);
-       
-    }
-    public static void main(String[] args) throws Exception {
+    public static void executeOptions(){
+    
         Scanner scan = new Scanner(System.in);
-        menu();
+        App.menu();
         
         while(true) {  
         try {
@@ -53,18 +43,19 @@ public class App {
             if(choice == 7)
                 break;
             
-            menu(); 
+            App.menu(); 
             choice = scan.nextByte();
         }
         } catch(InputMismatchException ie) {
             System.out.println(Utils.ANSI_RED + "Entered input is invalid, please try again" + Utils.ANSI_RESET);
             System.out.println();
             scan.nextLine();
-            menu();
+            App.menu();
         }
         if(choice == 7)
                 break;    
         }
         scan.close();
     }
+
 }
