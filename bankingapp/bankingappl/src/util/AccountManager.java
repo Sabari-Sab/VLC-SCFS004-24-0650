@@ -10,6 +10,7 @@ public class AccountManager {
 
     static List<BankAccount> accList = new ArrayList<>();
     static int id = 0;
+  //  static BankAccount bankAccount = new BankAccount();
 
     public static void createAccount(Scanner inp) {
 
@@ -31,7 +32,7 @@ public class AccountManager {
     
         accList.add(new BankAccount(name,nric,deposit,id));
         
-        System.out.println("Your Account has been created successfully");
+        System.out.println(Utils.ANSI_GREEN + "Your Account has been created successfully" + Utils.ANSI_GREEN);
     }
 
     public static void displayAccount(Scanner inp) {
@@ -39,9 +40,9 @@ public class AccountManager {
         inp.nextLine();
         System.out.println("Enter acc holder name to view the account : ");
         String name = inp.nextLine();
-        System.out.println("=============== View Account Details =============");
+        System.out.println(Utils.ANSI_CYAN + "=============== View Account Details =============" + Utils.ANSI_RESET);
         int index = -1;
-       
+
         for(int i = 0; i < accList.size(); i++) {
            if(accList.get(i).getAccHolderName().equals(name)) {
                 index = i;
@@ -51,15 +52,20 @@ public class AccountManager {
 
         if(index != -1) {
 
-            System.out.println("Account Num " + accList.get(index).getAccNum());
-            System.out.println("Account Holder Name " + accList.get(index).getAccHolderName());
-            System.out.println("Account Holder NRIC " + accList.get(index).getNRIC());
-            System.out.println("Account Holder Balance " + accList.get(index).getInitialDeposit());
+            System.out.println(Utils.ANSI_GREEN + "Account Num : " + accList.get(index).getAccNum());
+            System.out.println("Account Holder Name: " + accList.get(index).getAccHolderName());
+            System.out.println("Account Holder NRIC: " + accList.get(index).getNRIC());
+            System.out.println("Account Holder Balance: " + accList.get(index).getBalance() + Utils.ANSI_RESET);
 
-            System.out.println("===================================================");
+            System.out.println(Utils.ANSI_CYAN + "==================================================" + Utils.ANSI_CYAN);
 
-        } else 
-        System.out.println(" Account not found ");
+        } else {
+        System.out.println(Utils.ANSI_YELLOW + " Account not found " + Utils.ANSI_RESET);
+
+        System.out.println(Utils.ANSI_YELLOW + " Please enter the valid account name " + Utils.ANSI_RESET);
+
+        System.out.println(Utils.ANSI_CYAN + "==================================================" + Utils.ANSI_CYAN);
+        }
 
     }
 
@@ -67,19 +73,19 @@ public class AccountManager {
 
         if(accList.size() !=0) {
 
-        System.out.println("=============== View Account Details =============");
+        System.out.println(Utils.ANSI_CYAN + "=============== View Account Details =============" + Utils.ANSI_RESET);
       
         for(BankAccount ba : accList) {
 
-        System.out.println("Account Num " + ba.getAccNum());
-        System.out.println("Account Holder Name " + ba.getAccHolderName());
-        System.out.println("Account Holder NRIC " + ba.getNRIC());
-        System.out.println("Account Holder Balance " + ba.getInitialDeposit());
-        System.out.println("===================================================");
+        System.out.println(Utils.ANSI_GREEN + "Account Num: " + ba.getAccNum());
+        System.out.println("Account Holder Name: " + ba.getAccHolderName());
+        System.out.println("Account Holder NRIC: " + ba.getNRIC());
+        System.out.println("Account Holder Balance: " + ba.getBalance() + Utils.ANSI_RESET);
+        System.out.println(Utils.ANSI_CYAN + "==================================================" + Utils.ANSI_RESET);
 
         }
     } else 
-      System.out.println("No accounts to display.");
+      System.out.println(Utils.ANSI_YELLOW+ "No accounts to display." + Utils.ANSI_YELLOW);
     }
 
     public static void removeAccount(Scanner inp) {
@@ -98,15 +104,17 @@ public class AccountManager {
 
         if(index != -1) {
 
-            System.out.println("The below account has been removed successfully. ");
-            System.out.println("Account Num " + accList.get(index).getAccNum());
-            System.out.println("Account Holder Name " + accList.get(index).getAccHolderName());
-            System.out.println("============================================================");
+            System.out.println(Utils.ANSI_CYAN + "The below account has been removed successfully." + Utils.ANSI_RESET);
+            System.out.println();
+            System.out.println(Utils.ANSI_GREEN + "Account Num " + accList.get(index).getAccNum());
+            System.out.println("Account Holder Name " + accList.get(index).getAccHolderName() + Utils.ANSI_RESET);
+            System.out.println();
+            System.out.println(Utils.ANSI_CYAN + "============================================================" + Utils.ANSI_RESET);
 
             accList.remove(index);
 
         } else 
-        System.out.println(" Account not found ");
+        System.out.println(Utils.ANSI_YELLOW + " Account not found " + Utils.ANSI_RESET);
 
     }
 

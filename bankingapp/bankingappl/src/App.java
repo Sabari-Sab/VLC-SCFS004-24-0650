@@ -1,6 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import util.AccountManager;
+import util.Utils;
 
 
 public class App {
@@ -8,25 +9,23 @@ public class App {
     static byte choice;
 
    public static void menu(){
-        System.out.println("Choose from the options");
+        System.out.println();
+        System.out.println(Utils.ANSI_BLUE + "Choose from the options" + Utils.ANSI_RESET);
         System.out.println("---------------------");
-        System.out.println("1. Create a new account");
+        System.out.println(Utils.ANSI_GREEN + "1. Create a new account");
         System.out.println("2. List all accounts");
         System.out.println("3. View Account Details");
         System.out.println("4. Delete an account");
         System.out.println("5. Deposit");
         System.out.println("6. Withdraw");
-        System.out.println("7. Exit");
+        System.out.println("7. Exit" + Utils.ANSI_RESET);
        
     }
     public static void main(String[] args) throws Exception {
-
-        boolean validInput = true; 
         Scanner scan = new Scanner(System.in);
-        
         menu();
         
-        while(validInput) {  
+        while(true) {  
         try {
         choice = scan.nextByte();
         while(choice != 7){
@@ -58,7 +57,8 @@ public class App {
             choice = scan.nextByte();
         }
         } catch(InputMismatchException ie) {
-            System.out.println("Entered input is invalid, please try again");
+            System.out.println(Utils.ANSI_RED + "Entered input is invalid, please try again" + Utils.ANSI_RESET);
+            System.out.println();
             scan.nextLine();
             menu();
         }

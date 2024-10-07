@@ -8,7 +8,9 @@ public class BankAccount {
    private double balance;
    int accId;
 
-   
+   public BankAccount() {
+   }
+
    public BankAccount(String accHolderName, String nRIC, double initialDeposit, int accId) {
       accNum += accId;
       this.accHolderName = accHolderName;
@@ -20,11 +22,11 @@ public class BankAccount {
    }
 
    public void deposit(double amount){
-      balance += amount;
+      this.balance += amount;
    }
 
    public void withdraw(double amount){
-      balance -= amount;
+      this.balance -= amount;
    }
 
 
